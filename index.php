@@ -13,7 +13,7 @@ body, html {
 .bgimg {
     background-position: center;
     background-size: cover;
-    background-image: url("images/coffeehouse.jpg");
+    background-image: url(<?php echo get_template_directory_uri(); ?>/images/coffeehouse.jpg);
     min-height: 75%;
 }
 .menu {
@@ -66,7 +66,7 @@ body, html {
       <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
       <p>Chef, Coffeeist and Owner: Liam Brown</p>
     </div>
-    <img src="images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
     <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
     <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
   </div>
@@ -120,7 +120,7 @@ body, html {
       <h5>Soda</h5>
       <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
     </div>  
-    <img src="images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
   </div>
 </div>
 
@@ -184,7 +184,7 @@ function openMenu(evt, menuName) {
 }
 document.getElementById("myLink").click();
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
